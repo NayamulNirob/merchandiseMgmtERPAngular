@@ -13,10 +13,10 @@ import { Stock } from '../model/stockmodel';
 })  
 export class ReportsService {  
 
-  // private baseUrl="http://localhost:3000/"
+  private baseUrl="http://localhost:3000/"
 
  
-  private baseUrl="http://localhost:8089/api/"
+  // private baseUrl="http://localhost:8089/api/"
 
   private inventory: InventoryItem[] = [];  
   private sales: Sale[] = [];  

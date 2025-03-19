@@ -12,7 +12,9 @@ export class SupplierService {
 
 
 
-  private baseUrl = "http://localhost:8089/api/supplier";
+  // private baseUrl = "http://localhost:8089/api/supplier";
+
+  private baseUrl = "http://localhost:3000/api/supplier";
 
   private suppliers: Supplier[] = [];
 

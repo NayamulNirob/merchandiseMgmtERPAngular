@@ -8,7 +8,9 @@ import { map, Observable } from 'rxjs';
 })
 export class ProductService {
 
-  private baseUrl = "http://localhost:8089/api/product";
+  // private baseUrl = "http://localhost:8089/api/product";
+
+  private baseUrl = "http://localhost:3000/api/product";
 
   constructor(private http: HttpClient) {}  
    

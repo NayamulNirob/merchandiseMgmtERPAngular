@@ -18,7 +18,9 @@ import { TaskStatus, TodoTask } from '../model/todotaskmodel';
 export class AdmindashbordserviceService {
 
  
-  private baseUrl="http://localhost:8089/api/"
+  // private baseUrl="http://localhost:8089/api/"
+
+  private baseUrl="http://localhost:3000/api/"
 
   private inventory: InventoryItem[] = [];  
   private sales: Sale[] = [];  

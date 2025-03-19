@@ -9,7 +9,9 @@ import { SubCategories } from '../model/subcategoriesmodel';
 })
 export class SubcategoryService {
 
-  private baseUrl = "http://localhost:8089/api/subcategories";
+  // private baseUrl = "http://localhost:8089/api/subcategories";
+
+  private baseUrl = "http://localhost:3000/api/subcategories";
 
   private subCategories: SubCategories = new SubCategories();
 

@@ -18,7 +18,9 @@ import { SubCategories } from '../model/subcategoriesmodel';
 })
 export class UserdashboardService {
 
-  private baseUrl="http://localhost:8089/api/"
+  // private baseUrl="http://localhost:8089/api/"
+
+  private baseUrl="http://localhost:3000/api/"
 
   private inventory: InventoryItem[] = [];  
   private sales: Sale[] = [];  

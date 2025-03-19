@@ -11,7 +11,9 @@ import test from 'node:test';
 })
 export class InventoryService {
 
-  private baseUrl = "http://localhost:8089/api/inventory";
+  // private baseUrl = "http://localhost:8089/api/inventory";
+
+  private baseUrl = "http://localhost:3000/api/inventory";
 
   private inventories: InventoryItem = new InventoryItem();
   private newInventories: InventoryItem[] = []

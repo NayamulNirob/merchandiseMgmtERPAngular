@@ -10,8 +10,12 @@ import { UserModel } from '../model/UserModel.1';
   providedIn: 'root'
 })
 export class AuthService {
+  [x: string]: any;
 
-  private apiUrl = 'http://localhost:8089';
+  // private apiUrl = 'http://localhost:8089';
+
+  private apiUrl = 'http://localhost:3000';
+
   private headers = new HttpHeaders({ 'Content-Type': 'application/json' });
 
   private userRoleSubject: BehaviorSubject<string | null> = new BehaviorSubject<string | null>(null);

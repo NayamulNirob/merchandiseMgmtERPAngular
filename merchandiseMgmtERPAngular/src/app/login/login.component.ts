@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
 import { Observable } from 'rxjs';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +17,8 @@ export class LoginComponent {
   constructor(
     private router: Router,
     private fromBuilder: FormBuilder,
-    private authService: AuthService
+    private authService: AuthService,
+    private userService: UserService,
 
   ) {
     this.logInFrom = this.fromBuilder.group({
@@ -33,6 +35,30 @@ export class LoginComponent {
   loginWithGoogle(): void {
     window.location.href = 'https://accounts.google.com/o/oauth2/auth?client_id=YOUR_GOOGLE_CLIENT_ID&redirect_uri=YOUR_REDIRECT_URI&response_type=token&scope=email';
   }
+
+  // onSubmit(): void {
+
+
+  //   if (this.logInFrom.valid) {
+  //     const credentials = this.logInFrom.value;
+  //     this.authService.login(credentials.email, credentials.password).subscribe({
+  //       next: (res) => {
+  //         console.log("user log in successfully:");
+  //         this.router.navigate(['/userProfile']);
+  //       },
+  //       error: (err) => {
+
+  //         console.error('Error Log In', err);
+  //       }
+  //     });
+  //   }
+  //   else {
+
+  //     alert('Enter a valid username and password \nIf don`t have register now \nOr check your email activation');
+  //   }
+
+  // }
+
 
   onSubmit(): void {
 

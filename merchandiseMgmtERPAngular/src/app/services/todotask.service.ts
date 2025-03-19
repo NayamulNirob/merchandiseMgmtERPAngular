@@ -7,9 +7,11 @@ import { TaskStatus, TodoTask } from '../model/todotaskmodel';
   providedIn: 'root'
 })
 export class TodotaskService {
-  private baseUrl = "http://localhost:8089/api/task";
+  // private baseUrl = "http://localhost:8089/api/task";
 
 
+  private baseUrl = "http://localhost:3000/api/task";
+  
   constructor(private http: HttpClient) { }
 
   getTasks(): Observable<TodoTask[]> {

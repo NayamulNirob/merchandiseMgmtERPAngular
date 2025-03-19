@@ -17,8 +17,12 @@ export class RegistrationService {
   constructor(private http: HttpClient,
     private autthServices:AuthService
   ) { }  
+  // getUserProfile():Observable<UserModel|null>{
+  //   return of(this.autthServices.getUserProfileFromStore());
+  // }
+
   getUserProfile():Observable<UserModel|null>{
-    return of(this.autthServices.getUserProfileFromStore());
+    return of(this.autthServices['getUserProfileFromStore']());
   }
 
   updateUserProfile(user:UserModel):Observable<UserModel>{

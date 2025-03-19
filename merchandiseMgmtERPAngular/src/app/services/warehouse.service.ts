@@ -11,7 +11,9 @@ import { WareHouse } from '../model/warehouse.model';
 export class WarehouseService{
   
 
-  private baseUrl = "http://localhost:8089/api/warehouse";
+  // private baseUrl = "http://localhost:8089/api/warehouse";
+
+  private baseUrl = "http://localhost:3000/api/warehouse";
 
   constructor(private http: HttpClient) {}  
 

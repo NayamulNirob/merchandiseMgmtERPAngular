@@ -9,7 +9,9 @@ import { AuthService } from './auth.service';
 })
 export class UserService {
 
-  baseUrl: string = "http://localhost:8089/api/user"
+  // baseUrl: string = "http://localhost:8089/api/user"
+
+  baseUrl: string = "http://localhost:3000/api/user"
 
   constructor(
     private http: HttpClient,

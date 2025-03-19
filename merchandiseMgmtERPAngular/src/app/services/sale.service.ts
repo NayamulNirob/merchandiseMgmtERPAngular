@@ -9,7 +9,9 @@ import { Sale } from '../model/sale.model';
 })  
 export class SalesService {  
   
-  baseUrl = "http://localhost:8089/api/sale"
+  // baseUrl = "http://localhost:8089/api/sale"
+
+    baseUrl = "http://localhost:3000/api/sale"
   
   private sales: Sale[] = []; 
   private newSale:Sale=new Sale(); 

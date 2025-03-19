@@ -14,7 +14,10 @@ import { InventoryItem } from '../model/inventory.item.model';
   providedIn: 'root'  
 })  
 export class OrderService {  
-  private baseUrl = "http://localhost:8089/api/order"; 
+  // private baseUrl = "http://localhost:8089/api/order"; 
+
+  private baseUrl = "http://localhost:3000/api/order"; 
+
   private orders: OrderItem[] = [];  
   private order:OrderItem=new OrderItem();
   private products:Product =new Product()

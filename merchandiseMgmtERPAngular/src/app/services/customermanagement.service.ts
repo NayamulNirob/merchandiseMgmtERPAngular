@@ -10,7 +10,9 @@ import { Customer } from "../model/Customer";
 })  
 export class CustomerService { 
   
-  private baseUrl = "http://localhost:8089/api/customer"; 
+  // private baseUrl = "http://localhost:8089/api/customer"; 
+
+  private baseUrl = "http://localhost:3000/api/customer"; 
 
   private customers: Customer[] = []; 
   private customer:Customer=new Customer(); 
