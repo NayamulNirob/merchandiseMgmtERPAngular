@@ -37,13 +37,12 @@ export class LoginComponent {
   }
 
   onSubmit(): void {
-
-
     if (this.logInFrom.valid) {
       const credentials = this.logInFrom.value;
       this.authService.login(credentials.email, credentials.password).subscribe({
         next: (res) => {
           console.log("user log in successfully:");
+          localStorage.setItem('authToken', res.token);
           this.router.navigate(['/userProfile']);
         },
         error: (err) => {
